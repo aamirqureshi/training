@@ -1,0 +1,23 @@
+.calculate-square-wrapper {
+    padding: 60px;
+}
+
+.calculate-frm {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+}
+
+.control-wrapper {
+    display: flex;
+    grid-gap: 20px;
+}
+
+.result-pane {
+    display: block;
+    height: auto;
+    width: 60%;
+    margin: auto;
+}

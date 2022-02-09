@@ -1,0 +1,13 @@
+
+<div class="calculate-square-wrapper">
+<form class="calculate-frm" [formGroup]="calculateSquareFrm" name="calculateSquareFrm">
+    <div class="control-wrapper" *ngFor="let config of formConfig">
+        <label>{{config.label}}</label><input type="number" [id]="config.id" [formControlName] = "config.formControlName">
+    </div>
+    <button class="calculate-btn" (click)="caluateLargestSquare()" [disabled]="calculateSquareFrm.invalid">calculate</button>
+</form>
+<div class="result-pane">
+    <div class="result-content" #resultContainer>        
+    </div>
+</div>
+</div>
